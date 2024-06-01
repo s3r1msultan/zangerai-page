@@ -1,0 +1,25 @@
+@import "../../../styles/variables.scss";
+
+.document-section {
+  margin-bottom: 2rem;
+  border: 1px solid rgba(63, 67, 80, 0.16);
+  box-shadow: 0 20px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  max-width: 35rem;
+  width: 100%;
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $color-black;
+  }
+
+  .document-cards {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    flex-wrap: nowrap;
+  }
+}

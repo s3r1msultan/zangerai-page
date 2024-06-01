@@ -1,0 +1,32 @@
+// Colors
+$color-blue: #1a365d;
+$color-gray: #757575;
+$color-dark-gray: #1e1e1e;
+$color-light-gray: #f4f4f4;
+$color-black: #222029;
+
+// Background gradient
+$background-gradient: linear-gradient(180deg, rgba(26, 54, 93, 0.25), rgba(26, 54, 93, 0.01));
+
+// Fonts
+@font-face {
+  font-family: "Nunito";
+  src: url("/assets/fonts/Nunito-Regular.ttf") format("truetype"),
+    url("/assets/fonts/Nunito-Bold.ttf") format("truetype"), url("/assets/fonts/Nunito-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/assets/fonts/Nunito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/assets/fonts/Nunito-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}

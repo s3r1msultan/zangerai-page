@@ -1,0 +1,63 @@
+.law-companies-page {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  ul {
+    list-style: none;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .law-companies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .law-company-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .company-description {
+      margin: 1rem 0;
+      color: #555;
+    }
+
+    .company-details {
+      p {
+        margin: 0.5rem 0;
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

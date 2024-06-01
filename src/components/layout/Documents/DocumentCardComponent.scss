@@ -1,0 +1,30 @@
+// src/components/Documents/DocumentCardComponent.scss
+@import "../../../styles/variables.scss";
+
+.document-card {
+  flex: 0 0 calc(33.333% - 1rem);
+  background-color: $color-light-gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  overflow: hidden;
+
+  &__image {
+    background-color: $color-gray;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    text-align: center;
+    color: $color-black;
+    font-weight: bold;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+  }
+}

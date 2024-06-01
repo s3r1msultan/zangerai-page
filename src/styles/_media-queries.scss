@@ -1,0 +1,16 @@
+// src/styles/_media-queries.scss
+
+$screen-xs: "only screen and (min-width: 480px)";
+$screen-sm: "only screen and (min-width: 600px)";
+$screen-md: "only screen and (min-width: 768px)";
+$screen-lg: "only screen and (min-width: 992px)";
+$max-screen-lg: "only screen and (max-width: 992px)";
+$screen-xl: "only screen and (min-width: 1382px)";
+
+// Container max widths
+$container-max-width-xs: 100%;
+$container-max-width-sm: 540px;
+$container-max-width-md: 720px;
+$container-max-width-lg: 960px;
+$container-max-width-xl: 1200px;
+$container-max-width-xxl: 1440px;

@@ -1,0 +1,86 @@
+@import "../../../styles/variables.scss";
+
+.message-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  &.mine {
+    justify-content: flex-end;
+    .message-box {
+      background-color: $color-blue;
+      text-align: left;
+      color: white;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 0.25rem;
+    }
+  }
+
+  &.theirs {
+    justify-content: flex-start;
+    .message-box {
+      background-color: darken($color-light-gray, 5%);
+      color: black;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 2rem;
+    }
+  }
+}
+
+.message-box {
+  max-width: 70%;
+
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.message-content {
+  white-space: pre-line;
+}
+.message-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: $color-light-gray;
+  border-radius: 2rem;
+  border: 1px solid rgba(42, 41, 41, 0.1);
+  box-shadow: 0 1px 5px rgba(42, 41, 41, 0.1);
+  width: 100%;
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  .message-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+
+  .send-button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

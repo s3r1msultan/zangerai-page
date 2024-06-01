@@ -1,0 +1,64 @@
+@import "../../../styles/variables.scss";
+
+.homepage {
+  display: flex;
+  padding-top: 4rem;
+  position: relative;
+  z-index: 1;
+
+  p {
+    color: $color-gray;
+  }
+
+  &__content {
+    max-width: 25rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-blue;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  &__button {
+    background-color: $color-blue;
+    color: white;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 2.5rem;
+    margin: 4rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-blue, 10%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__badges {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    img {
+      width: 100%;
+      max-width: 10rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: $color-gray;
+  }
+}

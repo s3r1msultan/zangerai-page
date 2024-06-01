@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.documents-page {
+  padding: 2rem;
+  background-color: $color-light-gray;
+  border-radius: 2rem;
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
